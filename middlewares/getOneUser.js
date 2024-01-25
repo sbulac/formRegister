@@ -6,8 +6,7 @@ const getOneUser = (req, res, next) => {
   if (tempId < 1) {
     return res.status(400).send("No hay usuarios con ese id");
   }
-
-  console.log(tempId);
+  next()
 };
 
 module.exports = getOneUser;

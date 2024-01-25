@@ -1,4 +1,4 @@
-const portUser = (req, res, next) => {
+const postUser = (req, res, next) => {
   const { body } = req;
 
   if (!body.name.trim() > 0) {
@@ -27,4 +27,4 @@ const portUser = (req, res, next) => {
   next();
 };
 
-module.exports = portUser;
+module.exports = postUser;
